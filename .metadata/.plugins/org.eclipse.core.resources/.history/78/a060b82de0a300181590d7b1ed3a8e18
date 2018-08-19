@@ -22,11 +22,11 @@ class Account{
 }
 public class fds {
 	public static void main(String[] args) {
-		Account a1=new Account(Integer.parseInt(args[0]),args[1]);
+		/*Account a1=new Account(Integer.parseInt(args[0]),args[1]);
 		a1.display();
 		a1.update(Integer.parseInt(args[2]), args[3], Integer.parseInt(args[4]));
 		a1.display();
-		
+		*/
 		Account[] a=new Account[3];
 		for(int i=0;i<3;i++)
 		{a[i]=new Account(i,null);
