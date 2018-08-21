@@ -1,0 +1,25 @@
+class Account{
+	int acc;
+	String name;
+	float amount;
+	Account(int act,String aname)
+	{acc=act;
+	name=aname;
+	}
+	void update(int act,String aname,float amt)
+	{acc=act;
+	name=aname;
+	amount=amt;
+	}
+	void display()
+	{System.out.println(acc+" "+name+" "+amount);
+	}
+}
+public class fds {
+	public static void main(String[] args) {
+		Account a1=new Account(Integer.parseInt(args[0]),args[1]);
+		a1.display();
+		a1.update(Integer.parseInt(args[2]), args[3], Integer.parseInt(args[4]));
+		a1.display();
+	}
+}
