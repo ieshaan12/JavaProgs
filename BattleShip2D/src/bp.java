@@ -3,9 +3,12 @@ import java.util.*;
 //import java.lang.*;
 class cB{
 	int arr[][];
-	String k;
+	private String k;
 	List<Integer> t;
 	//Ship a[];
+	String getString()
+	{return this.k;
+	}
 	cB()
 	{k="Playing!";
 		arr=new int[7][7];
@@ -74,7 +77,11 @@ class cB{
 	System.out.println();
 	}
 	cB checkhit(int posx,int posy)
-	{if(arr[posx][posy]!=2 && arr[posx][posy]!=-1)
+	{if(posx>6 || posy>6 || posx<0 || posy<0)
+	{System.out.println("Wrong Entry, Put in again");
+		return this;}
+	System.out.println(posx+","+posy);
+		if(arr[posx][posy]!=2 && arr[posx][posy]!=-1)
 		{if(arr[posx][posy]==0)
 		{System.out.println("Miss!");
 		arr[posx][posy]=-1;
@@ -124,10 +131,10 @@ public class bp {
 	//board.countOne();
 	Scanner inputx = new Scanner(System.in);
 	Scanner inputy = new Scanner(System.in);
-	while(board.k!="Won!")
+	while(board.getString()!="Won!")
 	{int numberx = inputx.nextInt();
 	int numbery = inputy.nextInt();
-	System.out.println(numberx+","+numbery);
+	//System.out.println(numberx+","+numbery);
 	board.checkhit(numberx,numbery);
 	}
 	}
