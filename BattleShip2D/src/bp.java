@@ -137,6 +137,5 @@ public class bp {
 	//System.out.println(numberx+","+numbery);
 	board.checkhit(numberx,numbery);
 	}
-	}
-	
+	}	
 }
