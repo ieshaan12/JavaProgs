@@ -117,7 +117,7 @@ class cB{
 	}
 	}
 /*class Ship{
-	Ship(int d, cB s)
+	Sh	ip(int d, cB s)
 	{int x=(int)(Math.random()*5);
 	int y=(int)(Math.random()*5);
 		
