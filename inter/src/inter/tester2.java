@@ -32,7 +32,7 @@ public class tester2 {
 	{hello2 obj=new hello2();
 	obj.print();
 	obj.show();
-	obj.disp();
+	hello2.disp();
 	obj.show2();
 	}
 
