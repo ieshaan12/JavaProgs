@@ -1,3 +1,4 @@
+import java.util.*;
 class GcdFinder
 { int gcd;
 void finder(int a, int b)
@@ -28,7 +29,10 @@ void finder(int a, int b)
 public class EuclidAlgo {
 public static void main(String[] args)
 	{GcdFinder ob=new GcdFinder();
-	ob.finder(273,91);
+	Scanner in=new Scanner(System.in);
+	int a=in.nextInt();
+	int b=in.nextInt();
+	ob.finder(a,b);
 	System.out.println(ob.gcd);
 	}
 }
