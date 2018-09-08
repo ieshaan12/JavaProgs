@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="inter.Show2.Printable2"/>
+<fullyQualifiedTypeName name="inter.Printable2.Showable"/>
+<fullyQualifiedTypeName name="inter.inter2.Printable3"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="classes.sup.sub"/>
 </qualifiedTypeNameHistroy>
