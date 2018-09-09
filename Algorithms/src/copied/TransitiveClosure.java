@@ -1,8 +1,5 @@
 package copied;
 //Program for transitive closure using Floyd Warshall Algorithm
-//import java.util.*;
-//import java.lang.*;
-//import java.io.*;
 
 class GraphClosure
 {
