@@ -13,6 +13,9 @@ int q2=s2.capacity();
 System.out.println(p3+" "+q3);
 System.out.println(p2+" "+q2);			
 System.out.println(p1+" "+q1);
-
+s3.append(" World");
+s3.ensureCapacity(24); //Either the argument or original capacity *2 + 2, whichever is greater
+System.out.println(s3.length()+" "+s3.capacity());
+System.out.println(s3);
 }
 }
