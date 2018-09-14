@@ -17,5 +17,11 @@ s3.append(" World");
 s3.ensureCapacity(24); //Either the argument or original capacity *2 + 2, whichever is greater
 System.out.println(s3.length()+" "+s3.capacity());
 System.out.println(s3);
+StringBuffer s4= new StringBuffer("Hey");
+System.out.println(s4.capacity());
+s4.append(", I am Ieshaan");
+System.out.println(s4.capacity());
+s4.append(". Nice to meet you");
+System.out.println(s4.capacity());
 }
 }
