@@ -1,7 +1,8 @@
 
 public class stringBuf {
 public static void main(String[] args)
-{StringBuffer s1=new StringBuffer();	//Automatically reserves 16 characters
+{
+StringBuffer s1=new StringBuffer();	//Automatically reserves 16 characters
 StringBuffer s2=new StringBuffer(10);				
 StringBuffer s3=new StringBuffer("Hello");
 int p3=s3.length();
@@ -23,5 +24,6 @@ s4.append(", I am Ieshaan");
 System.out.println(s4.capacity());
 s4.append(". Nice to meet you");
 System.out.println(s4.capacity());
+
 }
 }
