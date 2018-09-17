@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Al321 {
 public static void main(String[] args)
@@ -13,6 +12,11 @@ a1.addAll(a2);
 Collections.sort(a1);
 System.out.println(a1);
 System.out.println(a1.get(3));
-	
+ListIterator<Integer> itr=a1.listIterator();
+while(itr.hasNext())
+	System.out.println(itr.next());
+while(itr.hasPrevious())
+	System.out.println(itr.previous());
+
 }
 }
