@@ -38,6 +38,7 @@ public class ComparotorIF {
 public static void main(String[] args)
 {List<Account2> a1=new ArrayList<Account2>();
 a1.add(new Account2(123,"Matt",40001));
+a1.add(new Account2(123,"Matt",40001));
 a1.add(new Account2(112,"Andrew",5000));
 a1.add(new Account2(145,"Gilbert",6000));
 
@@ -49,6 +50,8 @@ System.out.println("Comarison on Account");
 Collections.sort(a1,new AccCmp());
 for(Account2 a:a1)
 	System.out.println(a);
-
+System.out.println(a1.get(1));
+System.out.println(a1.get(2));
+System.out.println(a1.get(2).equals(a1.get(1)));
 }
 }
