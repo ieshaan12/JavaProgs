@@ -1,4 +1,4 @@
-class Bound<T extends A>
+class Bound<T extends A &B>
 {private T objref;
 public Bound(T obj)
 {this.objref=obj;
