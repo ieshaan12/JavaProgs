@@ -1,5 +1,3 @@
-package generics;
-
 class Identity<T>{
 	T obj;
 	Identity(T obj)
