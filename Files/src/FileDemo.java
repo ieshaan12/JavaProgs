@@ -5,6 +5,7 @@ public class FileDemo {
 	{PrintWriter outStream=null;
 	//Scanner inputStream=null;
 	
+	
 	try {outStream=new PrintWriter(new FileOutputStream("stuff.txt"));
 	}
 	catch(FileNotFoundException e)
@@ -12,7 +13,7 @@ public class FileDemo {
 	System.exit(0);
 	}
 	outStream.print("The quick brown fox ");
-	outStream.println("jumped over the lazy dog.");
+	outStream.println("jumped over the lazy dog.45");
 	outStream.close();
 	}
 }
