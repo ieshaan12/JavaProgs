@@ -6,8 +6,8 @@ MyGui(){
 	setVisible(true);
 	setTitle("Core Banking");
 	Button b=new Button("Submit");
-	setBackground(Color.cyan);
-	b.setBounds(50, 100, 80, 30);
+	setBackground(Color.red);
+	b.setBounds(50, 80, 80, 30);
 	add(b);
 }
 }
