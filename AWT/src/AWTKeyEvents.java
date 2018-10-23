@@ -6,6 +6,7 @@ AWTKeyEvents()
 	{addKeyListener(this);
 	setSize(400,400);
 	setLayout(null);
+	setVisible(true);
 	setBackground(Color.cyan);
 	}
 public void keyPressed(KeyEvent e)
