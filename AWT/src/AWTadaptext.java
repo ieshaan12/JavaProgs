@@ -17,8 +17,6 @@ AWTadaptext()
 	 area.addMouseListener(new MouseAdapter()
 			 {public void mouseReleased(MouseEvent e)
 			 	{l.setText(area.getSelectedText());
-			 	 b=new Button(area.getSelectedText());
-			 	 
 			 	}
 	});
 	 add(l);add(area);add(b);
