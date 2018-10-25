@@ -8,6 +8,10 @@ AWTKeyEvents()
 	setLayout(null);
 	setVisible(true);
 	setBackground(Color.cyan);
+	addWindowListener(new WindowAdapter()
+	{public void windowClosing(WindowEvent e)
+		{System.exit(0);}
+	});
 	}
 public void keyPressed(KeyEvent e)
 	{int key=e.getKeyCode();

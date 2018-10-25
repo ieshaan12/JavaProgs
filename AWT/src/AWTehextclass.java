@@ -7,7 +7,10 @@ AWTehextclass()
 {setTitle("Core Banking");
 tf=new TextField();
 tf.setBounds(100, 100, 170, 30);
-
+addWindowListener(new WindowAdapter()
+{public void windowClosing(WindowEvent e)
+	{System.exit(0);}
+});
 Button b=new Button("Submit");
 b.setBounds(100,150,100,30);
 

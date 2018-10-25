@@ -8,6 +8,10 @@ AwtMouse()
 setSize(300,300);
 setLayout(null);
 setVisible(true);
+addWindowListener(new WindowAdapter()
+		{public void windowClosing(WindowEvent e)
+			{System.exit(0);}
+		});
 }
 public void mouseEntered(MouseEvent e)
 {msg="Mouse Entered";
