@@ -36,6 +36,10 @@ public void setDept(String dept) {
 public String toString()
 {return "Name: "+this.name+" Salary: "+this.salary+" Dept: "+this.dept;
 }
+}
 public class q2 {
-
+public static void main(String[] args)
+{
+	
+}
 }

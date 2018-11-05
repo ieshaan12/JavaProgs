@@ -6,6 +6,10 @@ class E extends D{
 public int a =10;
 public void show(){
 int a =0;
+System.out.println(((A)this).a);
+System.out.println(((B)this).a);
+System.out.println(((C)this).a);
+System.out.println(((D)this).a);
 // Write Java statements to display the values of
 // all a’s used in this file on System.out
 } // End of show() Method
