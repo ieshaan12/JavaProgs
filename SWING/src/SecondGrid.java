@@ -1,4 +1,7 @@
 import java.awt.GridLayout;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 import javax.swing.*;
 public	class SecondGrid {
 		JFrame f;
@@ -96,7 +99,10 @@ public	class SecondGrid {
 		f.setVisible(true);
 		f.setResizable(true);
 		}
-		public static void main(String z[]) {
+		public static void main(String z[]) throws Exception {
+			Class.forName("org.apache.derby.jdbc.ClientDriver");
+			Connection con=DriverManager.getConnection("jdbc:myDriver:myDatabase","Ieshaan"," hello");
+
 		SecondGrid pro = new SecondGrid();
 		pro.dis();
 		}

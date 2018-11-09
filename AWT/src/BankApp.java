@@ -45,6 +45,7 @@ public class BankApp extends WindowAdapter implements ItemListener,ActionListene
         state.add("Andhra");
         state.add("TamilNadu");
         f.add(state);
+        System.out.println("Hey");
         
         Label l4 = new Label("Interest Rate");
         f.add(l4);
