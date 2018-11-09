@@ -36,11 +36,14 @@ class gui {
 	 commentPanel.add(plus);
 	 plus.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 double a,b;
+			 double a,b;try {
 			 a=Double.parseDouble(text1.getText());
 			 b=Double.parseDouble(text2.getText());
 			 double c=a+b;
-			 label.setText(Double.toString(c));
+			 label.setText(Double.toString(c));}
+			 catch(Exception t) {
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+			 }
 		 }
 	 });
 	 
@@ -50,11 +53,15 @@ class gui {
 	 commentPanel.add(minus);
 	 minus.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 double a,b;
+			 double a,b;try {
 			 a=Double.parseDouble(text1.getText());
 			 b=Double.parseDouble(text2.getText());
 			 double c=a-b;
 			 label.setText(Double.toString(c));
+		 }
+			 catch(Exception t) {
+				 JOptionPane.showMessageDialog(new JFrame(),"Enter number values only");
+			 }
 		 }
 	 });
 	 
@@ -64,11 +71,15 @@ class gui {
 	 commentPanel.add(div);
 	 div.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 double a,b;
+			 double a,b;try {
 			 a=Double.parseDouble(text1.getText());
 			 b=Double.parseDouble(text2.getText());
 			 double c=a/b;
 			 label.setText(Double.toString(c));
+		 }
+			 catch(Exception t) {
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+			 }
 		 }
 	 });
 	 
@@ -78,11 +89,15 @@ class gui {
 	 commentPanel.add(multi);
 	 multi.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 double a,b;
+			 double a,b;try {
 			 a=Double.parseDouble(text1.getText());
 			 b=Double.parseDouble(text2.getText());
 			 double c=a*b;
 			 label.setText(Double.toString(c));
+		 }
+			 catch(Exception t) {
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+			 }
 		 }
 	 });
 	 option=new JButton();
@@ -90,11 +105,8 @@ class gui {
 	 commentPanel.add(option);
 	 option.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 double a,b;
-			 a=Double.parseDouble(text1.getText());
-			 b=Double.parseDouble(text2.getText());
-			 text1.setText(Double.toString(b));
-			 text2.setText(Double.toString(a));
+			 text1.setText(text2.getText());
+			 text2.setText(text1.getText());
 		 }
 	 });
 	 
