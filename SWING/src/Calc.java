@@ -42,7 +42,7 @@ class gui {
 			 double c=a+b;
 			 label.setText(Double.toString(c));}
 			 catch(Exception t) {
-				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only","Error: Redo",JOptionPane.ERROR_MESSAGE);
 			 }
 		 }
 	 });
@@ -60,7 +60,7 @@ class gui {
 			 label.setText(Double.toString(c));
 		 }
 			 catch(Exception t) {
-				 JOptionPane.showMessageDialog(new JFrame(),"Enter number values only");
+				 JOptionPane.showMessageDialog(new JFrame(),"Enter number values only","Error: Redo",JOptionPane.ERROR_MESSAGE);
 			 }
 		 }
 	 });
@@ -78,7 +78,7 @@ class gui {
 			 label.setText(Double.toString(c));
 		 }
 			 catch(Exception t) {
-				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only","Error: Redo",JOptionPane.ERROR_MESSAGE);
 			 }
 		 }
 	 });
@@ -96,7 +96,7 @@ class gui {
 			 label.setText(Double.toString(c));
 		 }
 			 catch(Exception t) {
-				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only");
+				 JOptionPane.showMessageDialog(new JFrame(), "Enter number values only","Error: Redo",JOptionPane.ERROR_MESSAGE);
 			 }
 		 }
 	 });
