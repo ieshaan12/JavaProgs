@@ -105,8 +105,10 @@ class gui {
 	 commentPanel.add(option);
 	 option.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent e) {
-			 text1.setText(text2.getText());
-			 text2.setText(text1.getText());
+			 String t1=text1.getText();
+			 String t2=text2.getText();
+			 text1.setText(t2);
+			 text2.setText(t1);
 		 }
 	 });
 	 
