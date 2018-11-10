@@ -17,7 +17,7 @@ public class Customer {
 	JLabel l1, l2, l3, l4,l5,l6,l7,l8,l9,l10;
 	JTextField tf1,tf2,tf4,tf5,tf6,tf7,tf8,tf10,tf11;
 	JScrollPane sp1;
-	JButton savebtn,resetbtn,editbtn1,editbtn2,deletebtn ;
+	JButton savebtn,resetbtn,editbtn1,editbtn2,deletebtn,showall ;
 	JComboBox tf3,tf9;
 	
 	Customer(){
@@ -68,6 +68,7 @@ public class Customer {
 		editbtn1=new JButton(" Edit ");
 		editbtn2=new JButton(" Save");
 		deletebtn=new JButton("Delete");
+		showall=new JButton("Show all");
 		
 		p1.add(l1);
 		p1.add(tf1);
@@ -96,6 +97,13 @@ public class Customer {
 		p3.add(l5);
 		p3.add(tf5);
 		p3.add(deletebtn);
+		p3.add(showall);
+		
+		showall.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				disp();
+			}
+		});
 		
 		resetbtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae){
@@ -107,11 +115,11 @@ public class Customer {
 			});
 		
 // Uncomment the following lines when you execute the code for the first time to //create the database and comment it after the first time
-	//try {
-		//createDatabase();              
-		//} catch (Exception e1) {      
-		//	e1.printStackTrace();
-		//}
+	try {
+		createDatabase();              
+		} catch (Exception e1) {      
+		e1.printStackTrace();
+		}
 		
 		savebtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae){
@@ -207,7 +215,7 @@ public class Customer {
 		}
 		public Connection getConnection() throws ClassNotFoundException, SQLException{
 			Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
-			Connection con = DriverManager.getConnection("jdbc:derby:cust;create=true;user=app;password=app");
+			Connection con = DriverManager.getConnection("jdbc:derby:cust2;create=true;user=app;password=app");
 			return con;
 		}
 		public void closeConnection(Connection con) throws SQLException{
@@ -223,12 +231,55 @@ public class Customer {
 		public static void main(String z[]){
 			Customer pro=new Customer();
 			pro.dis();
+			
 			}
+	/*	
+		public void disp() {
+			Connection con=null;
+			try {
+			Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
+
+		con = DriverManager.getConnection("jdbc:derby:cust2;create=true;user=app;password=app");
+			System.out.println("Successfully Connected to the database!");
+			
+			    } 
+			catch (ClassNotFoundException e) {
+			  System.out.println("Could not find the database driver " + e.getMessage());
+			    } 
+			catch (SQLException e) {
+			  System.out.println("Could not connect to the database " + e.getMessage());
+			    }
+			 try {
+				 // Get a result set containing all data from test_table
+				
+				 Statement statement = con.createStatement();
+				 
+				 ResultSet results = statement.executeQuery("SELECT * FROM test_table");
+				 // For each row of the result set ...
+				 while (results.next()) {
+				   // Get the data from the current row using the column index - column data are in the VARCHAR format
+				 
+				   String data = results.getString(1);
+				
+				   System.out.println("Fetching data by column index for row " + results.getRow() + " : " + data);
+				
+				   // Get the data from the current row using the column name - column data are in the VARCHAR format
+				 
+				   data = results.getString("test_col");
+				 
+				   System.out.println("Fetching data by column name for row " + results.getRow() + " : " + data);
+				 
+				 }
+			 }
+				 catch(SQLException e){
+					 System.out.println("Could not retrieve data from the database " + e.getMessage());
+				 }	
+		}*/
 		public void createDatabase() throws ClassNotFoundException, SQLException {
 
 			Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
 
-			Connection con = DriverManager.getConnection("jdbc:derby:cust;create=true;user=app;password=app");
+			Connection con = DriverManager.getConnection("jdbc:derby:cust2;create=true;user=app;password=app");
 
 			String createString = "create table CUSTOMER_INFO(CUSTOMER_ID INTEGER PRIMARY KEY,\r\n" + 
 							"CUSTOMER_NAME VARCHAR(20),\r\n" + 
