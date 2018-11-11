@@ -115,9 +115,9 @@ public class Customer {
 			});
 		
 // Uncomment the following lines when you execute the code for the first time to //create the database and comment it after the first time
-	//try {
-		//createDatabase();              
-		//} catch (Exception e1) {      
+//try {
+//		createDatabase();              
+	//	} catch (Exception e1) {      
 		//	e1.printStackTrace();
 		//}
 		
@@ -201,6 +201,7 @@ public class Customer {
 			}
 			}
 		});
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 		void dis()
 		{
@@ -259,9 +260,13 @@ public class Customer {
 				 while (results.next()) {
 				   // Get the data from the current row using the column index - column data are in the VARCHAR format
 				 
-				   String data = results.getString(1);
-				
-				   System.out.println("Fetching data by column index for row " + results.getRow() + " : " + data);
+				   String data = results	.getString(1);
+				   String data2 = results.getString(2);
+				   String data3 = results.getString(3);
+				   String data4 = results.getString(4);
+				   String data5 = results.getString(5);
+					
+				   System.out.println("Fetching data by column index for row " +  " : " + data+" "+" "+data2+" "+data3+" "+data4+" "+data5);
 				
 				   // Get the data from the current row using the column name - column data are in the VARCHAR format
 				 
