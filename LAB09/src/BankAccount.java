@@ -49,18 +49,21 @@ public class BankAccount {
      * Withdraws money from the BankAccount
      *
      * @param amount the amount to withdraw
+     * @throws InsufficientFundsException 
      */
     //TODO TASK 3: add code to throw our new exception if an overdraw is attempted
-    public void withdraw(double amount) {
+    public void withdraw(double amount) throws InsufficientFundsException {
         try{if (amount < 0) {
-            throw new InsufficientFundsException(
+            throw new IllegalArgumentException(
                     "Don't withdraw a negative amount!");
         }
+        if(amount>balance) {
+        	throw new InsufficientFundsException("Overdraw not possible");
         }
-        catch(InsufficientFundsException ex) {
-        	ex.getMessage();
+        balance=balance-amount;
         }
-        balance = balance - amount;
+        finally {}
+       
     }
 
     /**

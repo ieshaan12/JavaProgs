@@ -73,9 +73,9 @@ public class BankApp {
                 	System.out.println("\n*****ERROR*****: " + "No account! First find account"
                             + " or create a new account\n");
                 }
-                /*catch(InsufficientFundsException e) {
-                	
-                }*/
+                catch(InsufficientFundsException e) {
+                	e.getMessage();
+                }
                 break;
                 
             case 4:
