@@ -1,7 +1,3 @@
-/**
- * A class to represent a single bank account.
- * @author cs302
- */
 public class BankAccount {
 
     private double balance;
@@ -56,9 +52,13 @@ public class BankAccount {
      */
     //TODO TASK 3: add code to throw our new exception if an overdraw is attempted
     public void withdraw(double amount) {
-        if (amount < 0) {
+        try{if (amount < 0) {
             throw new InsufficientFundsException(
                     "Don't withdraw a negative amount!");
+        }
+        }
+        catch(InsufficientFundsException ex) {
+        	ex.getMessage();
         }
         balance = balance - amount;
     }

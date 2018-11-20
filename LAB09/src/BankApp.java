@@ -72,10 +72,10 @@ public class BankApp {
                 catch(NullPointerException e) {
                 	System.out.println("\n*****ERROR*****: " + "No account! First find account"
                             + " or create a new account\n");
-                } catch (InsufficientFundsException e) {
-					// TODO Auto-generated catch block
-					e.getMessage();
-				}
+                }
+                /*catch(InsufficientFundsException e) {
+                	
+                }*/
                 break;
                 
             case 4:
