@@ -125,5 +125,7 @@ User-Defined Exceptions
 		To raise exception of user-defined type, we need to create an object to his exception class and throw it using throw clause, as:
 			'''MyException me = new MyException(“Exception details”);
 			throw me;'''
+			
+
 		
 	
