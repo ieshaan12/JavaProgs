@@ -8,9 +8,9 @@ enum Months{
 		this.value=val;
 	}
 	
-	public String toString() {
+/*	public String toString() {
 		return Integer.toString(value);
-	}
+	}*/
 }
 
 public class Testrecord {
@@ -39,9 +39,10 @@ public static void main(String[] args)
 {Testrecord t=new Testrecord(Months.valueOf("May"));
 //Months s=new Months(2);
 t.Monthdesc();
+//Months a=new Months(3);
 //TestRecord l=new Testrecord(3);
 Testrecord k=new Testrecord(Months.valueOf("Jan"));
-System.out.println(t.m);
+System.out.println(t.m.valueOf("Aug"));
 System.out.println(k.m.ordinal());
 System.out.println(Months.May);
 for(Months s:Months.values()) {

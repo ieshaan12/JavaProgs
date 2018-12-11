@@ -8437,3 +8437,8 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-12-11 14:00:46.206
 !MESSAGE No repository found at http://download.eclipse.org/eclipse/updates/4.8.
+
+!ENTRY org.eclipse.core.resources 2 2 2018-12-11 16:18:21.746
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-12-11 16:18:21.746
+!MESSAGE The project description file (.project) for 'lab3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
