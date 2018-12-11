@@ -39,9 +39,13 @@ public static void main(String[] args)
 {Testrecord t=new Testrecord(Months.valueOf("May"));
 //Months s=new Months(2);
 t.Monthdesc();
+//TestRecord l=new Testrecord(3);
 Testrecord k=new Testrecord(Months.valueOf("Jan"));
 System.out.println(t.m);
 System.out.println(k.m.ordinal());
 System.out.println(Months.May);
+for(Months s:Months.values()) {
+	System.out.println(s);
+}
 }
 }
